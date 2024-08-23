@@ -1,0 +1,24 @@
+.caixaUser{
+    width: 1334px;
+    height: 84px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blueviolet;
+}
+.nomeUser{
+    font-size: 10;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: gray;
+}
+.comentario{
+    font-size: 10;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 110, 110);
+    background-color: gray;
+}

@@ -1,16 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Avatar } from './components/Avatar/Avatar'
+import { Canal } from './components/Canal/Canal'
+import { Comentario } from './components/Comentarios/Comentario'
+import { BoxVideo } from './components/Exibicao/BoxVideo/BoxVideo'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>uihuihuih</h1>
       <Canal/>
+      <Comentario/>
+      <BoxVideo/>
     </>
   )
 }

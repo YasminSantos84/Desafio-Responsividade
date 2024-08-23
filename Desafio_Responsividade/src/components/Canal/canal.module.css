@@ -9,3 +9,16 @@
     padding-bottom: 10px;
     background-color: blueviolet;
 }
+.nomeCanal{
+    font-size: 10;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: gray;
+}
+.nSubscribes{
+    font-size: 10;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(110, 110, 110);
+    background-color: gray;
+}
