@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
+      <BoxVideo/>   
       <Canal/>
-      <Comentario/>
-      <BoxVideo/>
+      <Comentario/>      
     </>
   )
 }
