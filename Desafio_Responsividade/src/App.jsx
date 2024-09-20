@@ -2,38 +2,62 @@ import { useState } from 'react'
 import './App.css'
 import { Canal } from './components/Canal/Canal'
 import { Comentario } from './components/Comentarios/Comentario'
-import { BoxVideo } from './components/Exibicao/BoxVideo/BoxVideo'
-import { Preview } from './components/Recomendacoes/Preview/Preview'
+import { BoxVideo } from './components/Exibicao/BoxVideo'
+import { Preview } from './components/Recomendacoes/Preview'
 import Grid from '@mui/material/Unstable_Grid2/Grid2'
-import { Box } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { InformacoesVideo } from './components/Exibicao/InfoPlayer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
+  // const theme = useTheme;
+  // const isMobile = useMediaQuery(theme.breakpoints.up('md'));
 
   return (
     <>
-      <Box sx={{ flexGrow: 1, p: 2 }}>
+      {/* </><Box sx={{ flexGrow: 1, p: 2, 
+        // gridTemplateColumns: isMobile ? "1fr" : "1.5fr 2fr 1.5fr 1.5fr ",
+      //}}> */}
       <Grid
-        container
-        sx={{
-          '--Grid-borderWidth': '1px',
-          borderTop: 'var(--Grid-borderWidth) solid',
-          borderLeft: 'var(--Grid-borderWidth) solid',
-          borderColor: 'divider',
-          '& > div': {
-            borderRight: 'var(--Grid-borderWidth) solid',
-            borderBottom: 'var(--Grid-borderWidth) solid',
-            borderColor: 'divider',
-          },
-        }}>
-          <BoxVideo/>   
-          <Canal/>
-          <Comentario/> 
-          <Preview/>              
+        container         
+        lg={8}
+        md={12}
+        sm={12}
+        sx={12}>
+          <Grid item>
+            <BoxVideo/> 
+            <InformacoesVideo/> 
+          </Grid>
+          <Grid item>
+            <Canal/>  
+          </Grid>
+          <Grid item>
+            <Comentario/>  
+          </Grid>                      
         </Grid>
-      </Box> 
+        <Grid 
+          container gap={2}>   
+          <Grid item>
+            <Preview/>  
+          </Grid>         
+        </Grid>         
+      {/* </Box>  */}
+      {/* <Grid container>
+        <Grid item 
+        gap={1}
+        lg={3}
+        md={6}
+        sm={12}
+        sx={12}
+        >
+          titulo
+        </Grid>
+        <Grid item>resumo</Grid>
+      </Grid> */}
+
     </>
   )
 }
 
 export default App
+

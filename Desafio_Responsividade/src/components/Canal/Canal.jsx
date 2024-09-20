@@ -13,13 +13,27 @@ const ColorButtonRed = styled(Button)(({ theme }) => ({
 
 export const Canal = () => {
   return (
-    <Box className={styles.caixaCanal} sx={{ flexGrow: 1, overflow: "hidden", px: 3 }}>
+    <Box className={styles.caixaCanal}
+      sx={{ 
+        flexGrow: 1, 
+        overflow: "hidden", 
+        px: 3 }}
+      >
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item>
           <Avatar>Y</Avatar>
         </Grid>
         <Grid item xs zeroMinWidth>
-          <p>Canal Exemplo Desafio</p>
+          <Box
+            sx={{
+              height:25,
+              width:150,
+              my:4,
+              backgroundColor:'#717171'
+            }}
+            >
+              Canal Exemplo Desafio
+          </Box>
           <p className={styles.nSubscribes}>10 inscritos</p>
         </Grid>
         <Grid item>

@@ -6,6 +6,6 @@ export default function SvgIconPlayer () {
     return(
         <SvgIcon 
             component={PlayCircle}
-            sx={{fontSize:50}}/>
+            sx={{fontSize:45}}/>
     )
 }
