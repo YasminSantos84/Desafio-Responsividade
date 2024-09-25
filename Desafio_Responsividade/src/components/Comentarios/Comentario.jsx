@@ -1,11 +1,9 @@
 import {Avatar, Box} from "@mui/material";
-import "./comentario.module.css";
 import { Grid } from "@mui/material";
  
 export const Comentario = () => {
     return (
         <Box 
-            className = {'caixaUser'}
             sx={{ flexGrow:1, overflow:'hidden', px:3}}>
             <Grid 
                 container wrap="nowrap" 
@@ -14,8 +12,20 @@ export const Comentario = () => {
                     <Avatar/>
                 </Grid>
                 <Grid item xs zeroMinWidth>
-                    <p className="nomeUser">Canal Comentarista 1</p>
-                    <p className='comentario'>Comentario 1</p> 
+                    <Box
+                        sx={{
+                        height:15,
+                        width:345,
+                        my:4,
+                        backgroundColor:'#717171'
+                        }}/>
+                    <Box
+                        sx={{
+                        height:10,
+                        width:750,
+                        my:4,
+                        backgroundColor:'#fbf7f732'
+                        }}/>
                 </Grid>
             </Grid>
         </Box>

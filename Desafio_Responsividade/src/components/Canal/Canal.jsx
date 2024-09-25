@@ -17,24 +17,27 @@ export const Canal = () => {
       sx={{ 
         flexGrow: 1, 
         overflow: "hidden", 
-        px: 3 }}
+        px: 3}}
       >
-      <Grid container wrap="nowrap" spacing={2}>
+      <Grid container spacing={0}>
         <Grid item>
           <Avatar>Y</Avatar>
         </Grid>
         <Grid item xs zeroMinWidth>
           <Box
             sx={{
-              height:25,
-              width:150,
+              height:15,
+              width:345,
               my:4,
               backgroundColor:'#717171'
-            }}
-            >
-              Canal Exemplo Desafio
-          </Box>
-          <p className={styles.nSubscribes}>10 inscritos</p>
+            }}/>
+            <Box
+            sx={{
+              height:10,
+              width:80,
+              my:4,
+              backgroundColor:'#fbf7f732'
+            }}/>
         </Grid>
         <Grid item>
           <Stack>

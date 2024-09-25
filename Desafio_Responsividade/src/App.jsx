@@ -15,46 +15,33 @@ function App() {
 
   return (
     <>
-      {/* </><Box sx={{ flexGrow: 1, p: 2, 
-        // gridTemplateColumns: isMobile ? "1fr" : "1.5fr 2fr 1.5fr 1.5fr ",
-      //}}> */}
       <Grid
-        container         
-        lg={8}
-        md={12}
-        sm={12}
-        sx={12}>
-          <Grid item>
+        container
+        flexGrow={1}
+        overflow={"hidden"}
+        px={1}>
+          <Grid item xs={12} md={8} lg={6} sm={4}>
             <BoxVideo/> 
             <InformacoesVideo/> 
-          </Grid>
-          <Grid item>
             <Canal/>  
-          </Grid>
-          <Grid item>
             <Comentario/>  
-          </Grid>                      
+            <Comentario/>  
+            <Comentario/>  
+            <Comentario/>  
+            <Comentario/>  
+          </Grid>
+          <Grid item xs={12} md={4} lg={6} sm={8}>   
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+            <Preview/>
+          </Grid>                   
         </Grid>
-        <Grid 
-          container gap={2}>   
-          <Grid item>
-            <Preview/>  
-          </Grid>         
-        </Grid>         
-      {/* </Box>  */}
-      {/* <Grid container>
-        <Grid item 
-        gap={1}
-        lg={3}
-        md={6}
-        sm={12}
-        sx={12}
-        >
-          titulo
-        </Grid>
-        <Grid item>resumo</Grid>
-      </Grid> */}
-
     </>
   )
 }
